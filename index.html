@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>portfolio - jacobrphillipsdev</title>
+    <link rel="icon" href="/img/JP-LOGO-WHITE.png" sizes="32x32" />
     <link rel="stylesheet" href="/css/style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -11,7 +12,17 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
 
     <script defer src="/js/index.js"></script>
     <script
@@ -21,7 +32,6 @@
     ></script>
   </head>
   <body>
-
     <!--NAV-->
     <nav class="navbar navbar-expand-sm navbar-light sticky-top">
       <div class="container">
@@ -53,7 +63,7 @@
               <a class="nav-link" href="#projects-section">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Blog</a>
+              <a class="nav-link" href="#blog-section">Blog</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Contact</a>
@@ -66,175 +76,489 @@
       </div>
     </nav>
 
-     <!--SIDELINKS-->
-     <div class="sidelinks">
-                <a href="https://www.linkedin.com/in/jacobphillips-dev/" target="_blank">
-                    <i class="fab fa-linkedin fa-2x"></i>
-                </a>
-                <a href="https://github.com/jacobrphillips" target="_blank">
-                    <i class="fab fa-github fa-2x"></i>
-                </a>
-                <a href="https://www.youtube.com/@jacobrphillipsdev" target="_blank">
-                    <i class="fab fa-youtube fa-2x"></i>
-                </a>
+    <!--SIDELINKS-->
+    <div class="sidelinks">
+      <a href="https://www.linkedin.com/in/jacobphillips-dev/" target="_blank">
+        <i class="fab fa-linkedin fa-2x"></i>
+      </a>
+      <a href="https://github.com/jacobrphillips" target="_blank">
+        <i class="fab fa-github fa-2x"></i>
+      </a>
+      <a href="https://www.youtube.com/@jacobrphillipsdev" target="_blank">
+        <i class="fab fa-youtube fa-2x"></i>
+      </a>
     </div>
 
     <main role="main" class="pb-3">
-        <!--HOME-->
-        <section id="home-section">
-            <div class="container">
-                <div class="row d-flex justify-content-center align-content-center">
-                    <div class="col-lg-12 mx-auto my-5">
-                        <h6 class="home-title">Hi, I'm Jacob</h6>
-                        <p class="home-description">a Fullstack Developer</p>
-                        <h6 class="home-subtitle">based in the UK</h6>
-                    </div>
-                </div>
+      <!--HOME-->
+      <section id="home-section">
+        <div class="container">
+          <div class="row d-flex justify-content-center align-content-center">
+            <div class="col-lg-12 mx-auto my-5">
+              <h6 class="home-title">Hi, I'm Jacob</h6>
+              <p class="home-description">a Fullstack Developer</p>
+              <h6 class="home-subtitle">based in the UK</h6>
             </div>
-        </section>
-    
-        <!--ABOUT-->
-        <section id="about-section">
-            <div class="container">
+          </div>
+        </div>
+      </section>
+
+      <!--ABOUT-->
+      <section id="about-section">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-lg-6 col-md-12 mt-5 mb-sm-4 d-flex justify-content-center align-content-center"
+            >
+              <img
+                class="img-fluid rounded my-4"
+                src="/img/headshot1.jpeg"
+                alt="Jacob Phillips picture"
+                style="max-height: 400px"
+              />
+            </div>
+            <div
+              class="col-lg-6 col-md-12 d-flex justify-content-center align-content-center"
+              style="margin-top: 90px"
+            >
+              <div>
+                <h4 class="about-title">
+                  Welcome to my little corner of the internet!
+                </h4>
+                <p class="about-description">
+                  I'm Jacob Phillips, a U.S. Air Force veteran residing in the
+                  United Kingdom. I am currently pursuing a Bachelor's of
+                  Science in Computer Science from Oregon State University. I
+                  have a passion for all things technology and design, from
+                  software engineering to UI/UX. In addition to my love of
+                  technology and design, I am also interested in music
+                  production and sound design.
+                </p>
+                <h6 class="about-subtitle">
+                  Below are details of some of projects I have developed.
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--PROJECTS-->
+      <section id="projects-section">
+        <div class="container d-flex flex-column mt-4 p-4">
+          <div class="card mb-5">
+            <div class="row g-0">
+              <div class="col-md-6">
+                <img
+                  src="/img/instructor-hub.png"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title">Instructor Hub</h5>
+                  <p class="card-text">
+                    I led a team of five as the UI Manager for a full-stack CRM
+                    application, overseeing tasks related to student data
+                    management and assessments. I was responsible for developing
+                    the responsive front-end using React, which included tasks
+                    such as state management, routing, and styling.
+                    Additionally, I established a RESTful API with Express for
+                    handling CRUD operations in PostgreSQL. To ensure the
+                    reliability of the backend, I conducted thorough testing
+                    using Jest. I also focused on validating the user experience
+                    through Playwright to guarantee a seamless and user-friendly
+                    application.
+                  </p>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <p class="card-text">
+                        <small class="text-muted"> Technologies used: </small>
+                      </p>
+                      <div>
+                        <img
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                          alt="React"
+                          style="height: 30px; width: auto"
+                        />
+
+                        <img
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                          alt="Nodejs"
+                          style="height: 30px; width: auto"
+                        />
+
+                        <img
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                          alt="Express"
+                          style="height: 30px; width: auto"
+                        />
+
+                        <img
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+                          alt="PostgreSQL"
+                          style="height: 30px; width: auto"
+                        />
+
+                        <img
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+                          alt="Docker"
+                          style="height: 30px; width: auto"
+                        />
+
+                        <img
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg"
+                          alt="Jest"
+                          style="height: 30px; width: auto"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <p class="card-text">
+                        <small class="text-muted">
+                          Website & Github Repo:
+                        </small>
+                      </p>
+                      <div>
+                        <a
+                          href="https://instructor-hub-20.onrender.com/"
+                          target="_blank"
+                          class="px-3"
+                        >
+                          <i class="fa-solid fa-globe fa-2x"></i>
+                        </a>
+                        <a
+                          href="https://github.com/gschool-blue-ocean/instructor-hub-20"
+                          target="_blank"
+                          class="px-3"
+                        >
+                          <i class="fab fa-github fa-2x"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-5">
+            <div class="row g-0">
+              <div class="col-md-6">
+                <img
+                  src="/img/system-design-capstone.png"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    System Design Capstone - Server Side Optimisation
+                  </h5>
+                  <p class="card-text">
+                    I was tasked with scaling a backend system similar to Epic
+                    Games's. I improved an existing backend by conducting load
+                    tests and migrating seeded data to Docker to ensure
+                    uniformity. To enhance the overall performance, I
+                    implemented Redis caching and utilized a separate Digital
+                    Ocean droplet. I further optimized scalability by
+                    containerizing Express through Docker Compose.
+                  </p>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <p class="card-text">
+                        <small class="text-muted"> Technologies used: </small>
+                      </p>
+                      <div>
+                        <img
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+                          alt="Docker"
+                          style="height: 30px; width: auto"
+                        />
+
+                        <img
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg"
+                          alt="Redis"
+                          style="height: 30px; width: auto"
+                        />
+
+                        <img
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                          alt="Nodejs"
+                          style="height: 30px; width: auto"
+                        />
+
+                        <img
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                          alt="Express"
+                          style="height: 30px; width: auto"
+                        />
+
+                        <img
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+                          alt="PostgreSQL"
+                          style="height: 30px; width: auto"
+                        />
+
+                        <img
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/digitalocean/digitalocean-plain.svg"
+                          alt="DigitalOcean"
+                          style="height: 30px; width: auto"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <p class="card-text">
+                        <small class="text-muted">
+                          Youtube Video & Github Repo:
+                        </small>
+                      </p>
+                      <div>
+                        <a
+                          href="https://youtu.be/eeh3rUcx_-o?si=wFB4gGe2K7O1qhu6"
+                          target="_blank"
+                          class="px-3"
+                        >
+                          <i class="fab fa-youtube fa-2x"></i>
+                        </a>
+                        <a
+                          href="https://github.com/jacobrphillips/SDC"
+                          target="_blank"
+                          class="px-3"
+                        >
+                          <i class="fab fa-github fa-2x"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-5">
+            <div class="row g-0">
+              <div class="col-md-6">
+                <img
+                  src="/img/adidas-fec.png"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title">Adidas Product Page</h5>
+                  <p class="card-text">
+                    Working in a team of four, we developed a full-stack web
+                    application emulating the design of an Adidas product page.
+                    It consists of a React frontend, I constructed a dependable
+                    RESTful API using Express, integrating it with SQL to ensure
+                    optimal data management efficiency. The collective effort
+                    was dedicated to creating a refined and cohesive user
+                    experience.
+                  </p>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <p class="card-text">
+                        <small class="text-muted"> Technologies used: </small>
+                      </p>
+                      <div>
+                        <img
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                          alt="React"
+                          style="height: 30px; width: auto"
+                        />
+
+                        <img
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                          alt="Nodejs"
+                          style="height: 30px; width: auto"
+                        />
+
+                        <img
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                          alt="Express"
+                          style="height: 30px; width: auto"
+                        />
+
+                        <img
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+                          alt="PostgreSQL"
+                          style="height: 30px; width: auto"
+                        />
+
+                        <img
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+                          alt="Docker"
+                          style="height: 30px; width: auto"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <p class="card-text">
+                        <small class="text-muted"> Github Repo: </small>
+                      </p>
+                      <div>
+                        <a
+                          href="https://github.com/FrontEndForceTeam/AdidasFEC"
+                          target="_blank"
+                          class="px-3"
+                        >
+                          <i class="fab fa-github fa-2x"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--BLOG-->
+      <section id="blog-section">
+        <div class="card mb-5">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <img
+                src="/img/blog-pic.png"
+                class="img-fluid rounded-start"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <h5 class="card-title">jacobrphillips.com - Blog</h5>
+                <p class="card-text">
+                  I've created a personal blog to document and share my
+                  programming journey, capturing experiences, challenges, and
+                  growth as I navigate coding intricacies. The blog offers
+                  insights into my projects, skills gained, and lessons learned.
+                  With each post, I aim to encapsulate my programming journey,
+                  serving as a valuable resource for self-reflection,
+                  enthusiasts, learners, and anyone curious about coding. Built
+                  with C# and ASP.NET Core MVC.
+                </p>
                 <div class="row">
-                    <div class="col-lg-6 col-md-12 mt-5 mb-sm-4 d-flex justify-content-center align-content-center">
-                            <img class="img-fluid rounded my-4" src="/img/headshot1.jpeg" alt="Jacob Phillips picture" style="max-height: 400px;" />
+                  <div class="col-md-6">
+                    <p class="card-text">
+                      <small class="text-muted"> Technologies used: </small>
+                    </p>
+                    <div>
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-plain.svg"
+                        alt="CSharp"
+                        style="height: 30px; width: auto"
+                      />
+
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg"
+                        alt="DotnetCore"
+                        style="height: 30px; width: auto"
+                      />
+
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+                        alt="PostgreSQL"
+                        style="height: 30px; width: auto"
+                      />
+
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-plain.svg"
+                        alt="Heroku"
+                        style="height: 30px; width: auto"
+                      />
+
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg"
+                        alt="visualstudio"
+                        style="height: 30px; width: auto"
+                      />
                     </div>
-                    <div class="col-lg-6 col-md-12 d-flex justify-content-center align-content-center" style="margin-top: 90px;">
-                            <div >
-                            <h4 class="about-title">Welcome to my little corner of the internet!</h4>
-                            <p class="about-description" >I'm Jacob Phillips, a U.S. Air Force veteran residing in the United Kingdom. I am currently pursuing a Bachelor's of Science in Computer Science from Oregon State University. I have a passion for all things technology and design, from software engineering to UI/UX.
-                                In addition to my love of technology and design, I am also interested in music production and sound design.
-                                </p>
-                            <h6 class="about-subtitle">Below are details of some of projects I have developed.</h6>
-                            </div>
+                  </div>
+                  <div class="col-md-6">
+                    <p class="card-text">
+                      <small class="text-muted"> Github Repo: </small>
+                    </p>
+                    <div>
+                      <a
+                        href="https://www.jacobrphillips.com/"
+                        target="_blank"
+                        class="px-3"
+                      >
+                        <i class="fa-solid fa-globe fa-2x"></i>
+                      </a>
+                      <a
+                        href="https://github.com/jacobrphillips/YoutubeBlog"
+                        target="_blank"
+                        class="px-3"
+                      >
+                        <i class="fab fa-github fa-2x"></i>
+                      </a>
                     </div>
+                  </div>
                 </div>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!--PROJECTS-->
-        <section id="projects-section">
-            <div class="container d-flex flex-column mt-4 p-4">
-                <div class="card mb-3" >
-                    <div class="row g-0">
-                        <div class="col-md-6">
-                            <img src="" 
-                                class="img-fluid rounded-start" alt="...">
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card-body">
-                                <h5 class="card-title">
-                                    Data Structures
-                                </h5>
-                                <p class="card-text">
-                                    A data structure is a storage that is 
-                                    used to store and organize data. 
-                                </p>
-                                <p class="card-text">
-                                    <small class="text-muted">
-                                        Last updated now
-                                    </small>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card mb-3">
-                    <div class="row g-0">
-                        <div class="col-md-6">
-                            <img src="" 
-                                class="img-fluid rounded-start" 
-                                alt="...">
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card-body">
-                                <h5 class="card-title">Algorithms</h5>
-                                <p class="card-text">
-                                    Algorithm refers to a sequence of 
-                                    finite steps to solve a particular problem. 
-                                </p>
-                                <p class="card-text">
-                                    <small class="text-muted">
-                                        Last updated now
-                                    </small>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card mb-3">
-                    <div class="row g-0">
-                        <div class="col-md-6">
-                            <img src="" 
-                                class="img-fluid rounded-start" 
-                                alt="...">
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card-body">
-                                <h5 class="card-title">Algorithms</h5>
-                                <p class="card-text">
-                                    Algorithm refers to a sequence of 
-                                    finite steps to solve a particular problem. 
-                                </p>
-                                <p class="card-text">
-                                    <small class="text-muted">
-                                        Last updated now
-                                    </small>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-
-        <!--CODING CHALLENGES-->
-        <!--BLOG-->
-        <!--CONTACT-->
+      <!--CONTACT-->
     </main>
-
 
     <!--FOOTER-->
     <footer class="mt-auto py-3">
-        <div class="container">
-            <div class="row row-cols-1 row-cols-lg-3 gy-2">
-                <div class="col order-last order-lg-first text-light d-flex align-items-center justify-content-left">
-                    <div style="color: var(--primary-color);">
-                        <span class="text-muted">&copy;2023</span> Jacob Phillips |
-                        jacobrphillipsdev@gmail.com
-                        <div>
-                            Made by jacobrphillipsdev with ❤️
-                        </div>
-                    </div>
-                </div>
-                <div class="col d-flex align-items-center justify-content-start justify-content-lg-center">
-                    <img src="/img/JP-LOGO-GREY.png" alt="Jacob Phillips Logo" height="55" />
-                </div>
-                <div class="col d-flex align-items-center justify-content-start justify-content-lg-end">
-                    <div class="row">
-                        <div class="col social">
-                            <a href="https://www.linkedin.com/in/jacobphillips-dev/" target="_blank">
-                                <i class="fab fa-linkedin fa-2x"></i>
-                            </a>
-                        </div>
-                        <div class="col social">
-                            <a href="https://github.com/jacobrphillips" target="_blank">
-                                <i class="fab fa-github fa-2x"></i>
-                            </a>
-                        </div>
-                        <div class="col social">
-                            <a href="https://www.youtube.com/@jacobrphillipsdev" target="_blank">
-                                <i class="fab fa-youtube fa-2x"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3 gy-2">
+          <div
+            class="col order-last order-lg-first text-light d-flex align-items-center justify-content-left"
+          >
+            <div style="color: var(--primary-color)">
+              <span class="text-muted">&copy;2023</span> Jacob Phillips |
+              jacobrphillipsdev@gmail.com
+              <div>Made by jacobrphillipsdev with ❤️</div>
             </div>
+          </div>
+          <div
+            class="col d-flex align-items-center justify-content-start justify-content-lg-center"
+          >
+            <img
+              src="/img/JP-LOGO-GREY.png"
+              alt="Jacob Phillips Logo"
+              height="55"
+            />
+          </div>
+          <div
+            class="col d-flex align-items-center justify-content-start justify-content-lg-end"
+          >
+            <div class="row">
+              <div class="col social">
+                <a
+                  href="https://www.linkedin.com/in/jacobphillips-dev/"
+                  target="_blank"
+                >
+                  <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+              </div>
+              <div class="col social">
+                <a href="https://github.com/jacobrphillips" target="_blank">
+                  <i class="fab fa-github fa-2x"></i>
+                </a>
+              </div>
+              <div class="col social">
+                <a
+                  href="https://www.youtube.com/@jacobrphillipsdev"
+                  target="_blank"
+                >
+                  <i class="fab fa-youtube fa-2x"></i>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </footer>
-
   </body>
 </html>
