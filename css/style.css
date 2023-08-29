@@ -1,0 +1,139 @@
+:root {
+  --primary-color: #424241;
+  --secondary-color: #fdfdfd;
+  --tertiary-color: #473d5a;
+  --fourth-color: #2e3255;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: var(--primary-color) !important;
+  background-color: var(--secondary-color) !important;
+}
+
+i {
+  color: var(--primary-color);
+}
+
+nav {
+  border-bottom: 1px solid var(--primary-color);
+  background-color: var(--secondary-color);
+}
+
+footer {
+  border-top: 1px solid var(--primary-color);
+}
+
+nav ul li {
+  padding: 0px 60px;
+  font-size: 1.5em;
+}
+
+.brand-img {
+  height: 30px;
+  width: auto;
+}
+
+.sidelinks {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  font-size: 1rem;
+  margin: 200px 0px 0px 30px;
+}
+
+.sidelinks a {
+  padding: 10px 0px;
+}
+
+#home-section {
+    padding: 90px 300px 220px 300px;
+    border-bottom: 1px solid var(--primary-color);
+}
+  
+#about-section,
+#projects-section {
+  padding: 90px 100px 200px 100px;
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.home-title {
+    text-align: left;
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.home-subtitle {
+  text-align: right;
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.home-description {
+    text-align: center;
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+.about-title {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+}
+
+.about-description {
+  font-size: 1.4rem;
+  margin-bottom: 30px;
+}
+
+.about-subtitle {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+@media (max-width: 425px) {
+
+    #home-section,
+    #about-section,
+    #projects-section {
+      padding: 10px 30px 70px 30px;
+    }
+  
+    .home-title {
+      font-size: 2.5rem;
+    }
+  
+    .home-subtitle {
+      font-size: 1.8rem;
+      text-align: left;
+    }
+  
+    .home-description {
+      font-size: 2rem;
+    }
+  
+    .sidelinks {
+      display: none;
+    }
+  
+    .about-title {
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+  
+    .about-description {
+      font-size: 0.9rem;
+      margin-bottom: 30px;
+    }
+  
+    .about-subtitle {
+      font-size: 1.3rem;
+      font-weight: 700;
+    }
+  }
