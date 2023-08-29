@@ -63,6 +63,7 @@ nav ul li {
 }
   
 #blog-section,
+#contact-section,
 #about-section,
 #projects-section {
   padding: 90px 100px 200px 100px;
@@ -111,6 +112,7 @@ nav ul li {
 
     #home-section,
     #about-section,
+    #contact-section,
     #projects-section,
     #blog-section {
       padding: 10px 30px 70px 30px;
