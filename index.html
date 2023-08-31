@@ -2,10 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>portfolio - jacobrphillipsdev</title>
     <link rel="icon" href="/img/JP-LOGO-WHITE.png" sizes="32x32" />
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/contact-form.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -32,6 +33,7 @@
     ></script>
   </head>
   <body>
+
     <!--NAV-->
     <nav class="navbar navbar-expand-sm navbar-light sticky-top">
       <div class="container">
@@ -52,9 +54,7 @@
         <div class="collapse navbar-collapse" id="collapsibleNavId">
           <ul class="navbar-nav me-auto mt-2 mt-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#" aria-current="page"
-                >Home</a
-              >
+              <a class="nav-link" href="#" aria-current="page">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about-section">About</a>
@@ -77,7 +77,7 @@
     </nav>
 
     <!--SIDELINKS-->
-    <div class="sidelinks">
+    <div id="sidelinks" class="sidelinks">
       <a href="https://www.linkedin.com/in/jacobphillips-dev/" target="_blank">
         <i class="fab fa-linkedin fa-2x"></i>
       </a>
@@ -94,10 +94,10 @@
       <section id="home-section">
         <div class="container">
           <div class="row d-flex justify-content-center align-content-center">
-            <div class="col-lg-12 mx-auto my-5">
-              <h6 class="home-title">Hi, I'm Jacob</h6>
-              <p class="home-description">a Fullstack Developer</p>
-              <h6 class="home-subtitle">based in the UK</h6>
+            <div class="col-lg-12">
+              <h6 id="home-title" class="home-title">Hi, I'm Jacob</h6>
+              <p id="home-description" class="home-description">a Fullstack Developer</p>
+              <h6 id="home-subtitle" class="home-subtitle">based in the UK</h6>
             </div>
           </div>
         </div>
@@ -119,9 +119,8 @@
             </div>
             <div
               class="col-lg-6 col-md-12 d-flex justify-content-center align-content-center"
-              style="margin-top: 90px"
             >
-              <div>
+              <div class="about-box">
                 <h4 class="about-title">
                   Welcome to my little corner of the internet!
                 </h4>
@@ -145,17 +144,17 @@
 
       <!--PROJECTS-->
       <section id="projects-section">
-        <div class="container d-flex flex-column mt-4 p-4">
+        <div class="container d-flex flex-column mt-4">
           <div class="card mb-5">
             <div class="row g-0">
-              <div class="col-md-6">
+              <div class="col-lg-6">
                 <img
                   src="/img/instructor-hub.png"
                   class="img-fluid rounded-start"
                   alt="..."
                 />
               </div>
-              <div class="col-md-6">
+              <div class="col-lg-6">
                 <div class="card-body">
                   <h5 class="card-title">Instructor Hub</h5>
                   <p class="card-text">
@@ -172,11 +171,11 @@
                     application.
                   </p>
                   <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-lg-6">
                       <p class="card-text">
                         <small class="text-muted"> Technologies used: </small>
                       </p>
-                      <div>
+                      <div class="tech-used">
                         <img
                           src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
                           alt="React"
@@ -214,13 +213,13 @@
                         />
                       </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-lg-6">
                       <p class="card-text">
                         <small class="text-muted">
                           Website & Github Repo:
                         </small>
                       </p>
-                      <div>
+                      <div class="tech-used">
                         <a
                           href="https://instructor-hub-20.onrender.com/"
                           target="_blank"
@@ -244,14 +243,14 @@
           </div>
           <div class="card mb-5">
             <div class="row g-0">
-              <div class="col-md-6">
+              <div class="col-lg-6">
                 <img
                   src="/img/system-design-capstone.png"
                   class="img-fluid rounded-start"
                   alt="..."
                 />
               </div>
-              <div class="col-md-6">
+              <div class="col-lg-6">
                 <div class="card-body">
                   <h5 class="card-title">
                     System Design Capstone - Server Side Optimisation
@@ -266,11 +265,11 @@
                     containerizing Express through Docker Compose.
                   </p>
                   <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-lg-6">
                       <p class="card-text">
                         <small class="text-muted"> Technologies used: </small>
                       </p>
-                      <div>
+                      <div class="tech-used">
                         <img
                           src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
                           alt="Docker"
@@ -308,13 +307,13 @@
                         />
                       </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-lg-6">
                       <p class="card-text">
                         <small class="text-muted">
                           Youtube Video & Github Repo:
                         </small>
                       </p>
-                      <div>
+                      <div class="tech-used">
                         <a
                           href="https://youtu.be/eeh3rUcx_-o?si=wFB4gGe2K7O1qhu6"
                           target="_blank"
@@ -338,14 +337,14 @@
           </div>
           <div class="card mb-5">
             <div class="row g-0">
-              <div class="col-md-6">
+              <div class="col-lg-6">
                 <img
                   src="/img/adidas-fec.png"
                   class="img-fluid rounded-start"
                   alt="..."
                 />
               </div>
-              <div class="col-md-6">
+              <div class="col-lg-6">
                 <div class="card-body">
                   <h5 class="card-title">Adidas Product Page</h5>
                   <p class="card-text">
@@ -358,11 +357,11 @@
                     experience.
                   </p>
                   <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-lg-6">
                       <p class="card-text">
                         <small class="text-muted"> Technologies used: </small>
                       </p>
-                      <div>
+                      <div class="tech-used">
                         <img
                           src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
                           alt="React"
@@ -394,11 +393,11 @@
                         />
                       </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-lg-6">
                       <p class="card-text">
                         <small class="text-muted"> Github Repo: </small>
                       </p>
-                      <div>
+                      <div class="tech-used">
                         <a
                           href="https://github.com/FrontEndForceTeam/AdidasFEC"
                           target="_blank"
@@ -420,14 +419,14 @@
       <section id="blog-section">
         <div class="card mb-5">
           <div class="row g-0">
-            <div class="col-md-6">
+            <div class="col-lg-6">
               <img
                 src="/img/blog-pic.png"
                 class="img-fluid rounded-start"
                 alt="..."
               />
             </div>
-            <div class="col-md-6">
+            <div class="col-lg-6">
               <div class="card-body">
                 <h5 class="card-title">jacobrphillips.com - Blog</h5>
                 <p class="card-text">
@@ -441,11 +440,11 @@
                   with C# and ASP.NET Core MVC.
                 </p>
                 <div class="row">
-                  <div class="col-md-6">
+                  <div class="col-lg-6">
                     <p class="card-text">
                       <small class="text-muted"> Technologies used: </small>
                     </p>
-                    <div>
+                    <div class="tech-used">
                       <img
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-plain.svg"
                         alt="CSharp"
@@ -477,11 +476,11 @@
                       />
                     </div>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-lg-6">
                     <p class="card-text">
                       <small class="text-muted"> Website & Github Repo: </small>
                     </p>
-                    <div>
+                    <div class="tech-used">
                       <a
                         href="https://www.jacobrphillips.com/"
                         target="_blank"
@@ -508,65 +507,87 @@
       <!--CONTACT-->
       <section id="contact-section">
         <div
-          class="container d-flex justify-content-center align-content-center"
+          class="container my-5 mx-5-sm"
         >
           <div class="row">
-            <form
-              id="fcf-form-id"
-              class="fcf-form-class"
-              method="post"
-              action="contact-form-process.php"
-            >
-              <div class="fcf-form-group">
-                <label for="Name" class="fcf-label">Your name</label>
-                <div class="fcf-input-group">
-                  <input
-                    type="text"
-                    id="Name"
-                    name="Name"
-                    class="fcf-form-control"
-                    required
-                  />
-                </div>
-              </div>
-
-              <div class="fcf-form-group">
-                <label for="Email" class="fcf-label">Your email address</label>
-                <div class="fcf-input-group">
-                  <input
-                    type="email"
-                    id="Email"
-                    name="Email"
-                    class="fcf-form-control"
-                    required
-                  />
-                </div>
-              </div>
-
-              <div class="fcf-form-group">
-                <label for="Message" class="fcf-label">Your message</label>
-                <div class="fcf-input-group">
-                  <textarea
-                    id="Message"
-                    name="Message"
-                    class="fcf-form-control"
-                    rows="6"
-                    maxlength="3000"
-                    required
-                  ></textarea>
-                </div>
-              </div>
-
-              <div class="fcf-form-group">
-                <button
-                  type="submit"
-                  id="fcf-button"
-                  class="btn btn-dark"
+            <div class="fcf-body">
+              <div id="fcf-form">
+                <h3 class="fcf-h3">Contact me</h3>
+                <form
+                  id="fcf-form-id"
+                  class="fcf-form-class"
+                  method="POST"
+                  action="contact-form-process.php"
                 >
-                  Send Message
-                </button>
+                  <div class="fcf-form-group">
+                    <label for="Name" class="fcf-label">Your name</label>
+                    <div class="fcf-input-group">
+                      <input
+                        type="text"
+                        id="Name"
+                        name="Name"
+                        class="fcf-form-control"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <div class="fcf-form-group">
+                    <label for="Email" class="fcf-label"
+                      >Your email address</label
+                    >
+                    <div class="fcf-input-group">
+                      <input
+                        type="email"
+                        id="Email"
+                        name="Email"
+                        class="fcf-form-control"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <div class="fcf-form-group">
+                    <label for="Subject" class="fcf-label"
+                      >Your subject</label
+                    >
+                    <div class="fcf-input-group">
+                      <input
+                        type="text"
+                        id="Subject"
+                        name="Subject"
+                        class="fcf-form-control"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <div class="fcf-form-group">
+                    <label for="Message" class="fcf-label">Your message</label>
+                    <div class="fcf-input-group">
+                      <textarea
+                        id="Message"
+                        name="Message"
+                        class="fcf-form-control"
+                        rows="6"
+                        maxlength="3000"
+                        required
+                      ></textarea>
+                    </div>
+                  </div>
+
+                  <div class="fcf-form-group">
+                    <button
+                      type="submit"
+                      id="fcf-button"
+                      class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block"
+                    >
+                      Send Message
+                    </button>
+                  </div>
+                </form>
               </div>
-            </form>
+            </div>
           </div>
         </div>
       </section>
@@ -624,5 +645,8 @@
         </div>
       </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+    <script src="/js/animation.js"></script>
   </body>
 </html>
